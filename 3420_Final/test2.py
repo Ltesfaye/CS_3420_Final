@@ -1,25 +1,40 @@
-import numpy as np
 import matplotlib.pyplot as plt
-from scipy import interpolate
+import numpy
+import math
+import time
 
-def annotate_points(ax, A, B):
-    for xy in zip(A, B):
-        ax.annotate('(%s, %s)' % xy, xy=xy, textcoords="offset points")
+hl, = plt.plot([], [],'o-r',dashes =[1,1])
+plt.title('CS 3420 Final Project')
+plt.xlabel('Relative X')
+plt.ylabel('Relative Y')
 
-points = [(3.28,0.00),(4.00,0.50),(4.40,1.0),(4.60,1.52),(5.00,2.5),(5.00,3.34),(4.70,3.8)]
-points = points + [(4.50,3.96),(4.20,4.0),(3.70,3.90),(3.00,3.5),(2.00,2.9)]
-x, y = zip(*points)
+plt.ion()
+fig = plt.gcf()
+ax = plt.gca()
+fig.show()
+fig.canvas.draw()
 
-fig = plt.figure()
-ax = fig.add_subplot(111)
-plt.scatter(x, y, color='black')
-annotate_points(ax, x, y)
+def update_line(hl, new_data,new_datay):
+    hl.set_xdata(numpy.append(hl.get_xdata(), new_data))
+    hl.set_ydata(numpy.append(hl.get_ydata(), new_datay))
+    ax.relim() 
+    ax.autoscale_view() 
+    plt.draw()
 
-tck,u = interpolate.splprep([x, y], s=0)
-unew = np.arange(0, 1.01, 0.01)
-out = interpolate.splev(unew, tck)
+x = 0
+count = 0
 
-plt.plot(x, y, 'orange', out[0], out[1])
-plt.legend(['connect the dots', 'cubic spline'])
+xPoints = [0]
+yPoints = [0]
+cv = [[0, 0]]
+points=[]
+while(x<4):
+	if (count !=0):
+		update_line(hl,count,count * numpy.random.random_sample())
 
-plt.show()
+	x+=.1
+	count +=1
+	fig.canvas.draw()
+	time.sleep(.3)
+
+plt.show(fig)
