@@ -51,7 +51,7 @@ class data:
 		update_line(hl,x_val,y_val)
 		self.sPoint.append([x_val, y_val])
 		multiple =math.ceil(self.length/10)
-		print ("Scale_up_Factor:  "+ str(multiple)) #used for debuging limit tets
+		#print ("Scale_up_Factor:  "+ str(multiple)) #used for debuging limit tets
 		points = bspline(np.array(self.sPoint),n= (100*multiple),degree=3,periodic=False)
 		update_Spline(hl_s,points[:,0],points[:,1])
 
@@ -69,4 +69,17 @@ class data:
 
 	def draw(self):
 		fig.canvas.draw() # issues the figure draw update command
+	
+	def updatelabel(self, mode):
+		if (mode ==0):
+			plt.xlabel('Relative X Position')
+			plt.ylabel('Relative Y Position')
+		elif (mode ==1 ):
+			plt.xlabel('Relative X Velocity')
+			plt.ylabel('Relative Y Velocity')
+		else:
+			plt.xlabel('Relative X acceleration')
+			plt.ylabel('Relative Y acceleration')
+
+
 		

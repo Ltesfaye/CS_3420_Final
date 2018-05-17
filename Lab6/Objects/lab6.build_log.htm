@@ -22,15 +22,14 @@ Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
 C:\Users\leul\Documents\Spring 2018\Cs 3420\Lab6\lab6.uvprojx
-Project File Date:  05/15/2018
+Project File Date:  05/16/2018
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-compiling Integrate.c...
 compiling main.c...
 linking...
-Program Size: Code=17684 RO-data=2536 RW-data=60 ZI-data=2208  
+Program Size: Code=19476 RO-data=2536 RW-data=92 ZI-data=2196  
 ".\Objects\lab6.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
@@ -111,46 +110,46 @@ Package Vendor: Keil
       Include file:  template\RTE_Device.h
 
    * Component: NXP::Device:SDK Drivers:i2c:2.0.5
-      Source file:   drivers\fsl_i2c.c
       Include file:  drivers\fsl_i2c.h
+      Source file:   drivers\fsl_i2c.c
 
    * Component: NXP::Device:SDK Drivers:edma:2.1.2
-      Source file:   drivers\fsl_edma.c
       Include file:  drivers\fsl_edma.h
+      Source file:   drivers\fsl_edma.c
 
    * Component: NXP::Device:SDK Drivers:dmamux:2.0.2
-      Source file:   drivers\fsl_dmamux.c
       Include file:  drivers\fsl_dmamux.h
+      Source file:   drivers\fsl_dmamux.c
 
    * Component: NXP::Device:SDK Drivers:common:2.0.0
       Source file:   drivers\fsl_common.c
       Include file:  drivers\fsl_common.h
 
    * Component: NXP::Device:SDK Drivers:clock:2.1.0
-      Include file:  drivers\fsl_clock.h
       Source file:   drivers\fsl_clock.c
+      Include file:  drivers\fsl_clock.h
 
    * Component: Keil::Device:Startup:2.8
-      Include file:  addon_cmsis\Driver\MK64F\Config\RTE_Device.h
       Source file:   platform\devices\startup.c
-      Source file:   platform\devices\MK64F12\startup\arm\startup_MK64F12.s
-      Include file:  platform\devices\MK64F12\startup\system_MK64F12.h
       Source file:   platform\devices\MK64F12\startup\system_MK64F12.c
+      Include file:  platform\devices\MK64F12\startup\system_MK64F12.h
+      Source file:   platform\devices\MK64F12\startup\arm\startup_MK64F12.s
+      Include file:  addon_cmsis\Driver\MK64F\Config\RTE_Device.h
 
    * Component: Keil::Device:KSDK Utility:Debug Console:1.2.0
+      Include file:  platform\utilities\inc\fsl_debug_console.h
       Source file:   platform\utilities\src\fsl_debug_console.c
       Source file:   platform\utilities\src\print_scan.c
-      Include file:  platform\utilities\inc\fsl_debug_console.h
 
    * Component: Keil::Device:KSDK System:Interrupt:1.2.0
       Include file:  platform\system\inc\fsl_interrupt_manager.h
       Source file:   platform\system\src\interrupt\fsl_interrupt_manager.c
 
    * Component: Keil::Device:KSDK System:Clock:1.2.0
-      Include file:  platform\system\inc\fsl_clock_manager.h
-      Source file:   platform\system\src\clock\MK64F12\fsl_clock_MK64F12.c
       Source file:   platform\system\src\clock\fsl_clock_manager_common.c
+      Source file:   platform\system\src\clock\MK64F12\fsl_clock_MK64F12.c
       Source file:   platform\system\src\clock\fsl_clock_manager.c
+      Include file:  platform\system\inc\fsl_clock_manager.h
 
    * Component: Keil::Device:KSDK OSA:OSA:Bare Metal:1.2.0
       Include file:  platform\osa\inc\fsl_os_abstraction.h
@@ -165,30 +164,30 @@ Package Vendor: Keil
       Include file:  platform\hal\inc\fsl_uart_hal.h
 
    * Component: Keil::Device:KSDK HAL:SIM:1.2.0
-      Source file:   platform\hal\src\sim\MK64F12\fsl_sim_hal_MK64F12.c
       Include file:  platform\hal\inc\fsl_sim_hal.h
+      Source file:   platform\hal\src\sim\MK64F12\fsl_sim_hal_MK64F12.c
 
    * Component: Keil::Device:KSDK HAL:RTC:1.2.0
-      Include file:  platform\hal\inc\fsl_rtc_hal.h
       Source file:   platform\hal\src\rtc\fsl_rtc_hal.c
+      Include file:  platform\hal\inc\fsl_rtc_hal.h
 
    * Component: Keil::Device:KSDK HAL:PORT:1.2.0
-      Source file:   platform\hal\src\port\fsl_port_hal.c
       Include file:  platform\hal\inc\fsl_port_hal.h
+      Source file:   platform\hal\src\port\fsl_port_hal.c
 
    * Component: Keil::Device:KSDK HAL:OSC:1.2.0
-      Include file:  platform\hal\inc\fsl_osc_hal.h
       Source file:   platform\hal\src\osc\fsl_osc_hal.c
+      Include file:  platform\hal\inc\fsl_osc_hal.h
 
    * Component: Keil::Device:KSDK HAL:MCG:1.2.0
-      Include file:  platform\hal\inc\fsl_mcg_hal_modes.h
-      Source file:   platform\hal\src\mcg\fsl_mcg_hal.c
-      Source file:   platform\hal\src\mcg\fsl_mcg_hal_modes.c
       Include file:  platform\hal\inc\fsl_mcg_hal.h
+      Source file:   platform\hal\src\mcg\fsl_mcg_hal_modes.c
+      Source file:   platform\hal\src\mcg\fsl_mcg_hal.c
+      Include file:  platform\hal\inc\fsl_mcg_hal_modes.h
 
    * Component: Keil::Device:KSDK HAL:LPTMR:1.2.0
-      Include file:  platform\hal\inc\fsl_lptmr_hal.h
       Source file:   platform\hal\src\lptmr\fsl_lptmr_hal.c
+      Include file:  platform\hal\inc\fsl_lptmr_hal.h
 
    * Component: Keil::Device:KSDK HAL:I2C:1.2.0
       Include file:  platform\hal\inc\fsl_i2c_hal.h
@@ -203,29 +202,29 @@ Package Vendor: Keil
       Source file:   platform\hal\src\dmamux\fsl_dmamux_hal.c
 
    * Component: Keil::Device:KSDK Driver:eDMA:1.2.0
-      Source file:   platform\drivers\src\edma\fsl_edma_driver.c
-      Source file:   platform\drivers\src\edma\fsl_edma_common.c
       Include file:  platform\drivers\inc\fsl_edma_driver.h
-      Source file:   platform\drivers\src\edma\fsl_edma_irq.c
       Source file:   platform\drivers\src\edma\fsl_edma_lpm_callback.c
+      Source file:   platform\drivers\src\edma\fsl_edma_common.c
+      Source file:   platform\drivers\src\edma\fsl_edma_irq.c
+      Source file:   platform\drivers\src\edma\fsl_edma_driver.c
 
    * Component: Keil::Device:KSDK Driver:RTC:1.2.0
-      Include file:  platform\drivers\inc\fsl_rtc_driver.h
-      Source file:   platform\drivers\src\rtc\fsl_rtc_lpm_callback.c
-      Source file:   platform\drivers\src\rtc\fsl_rtc_irq.c
-      Source file:   platform\drivers\src\rtc\fsl_rtc_driver.c
       Source file:   platform\drivers\src\rtc\fsl_rtc_common.c
+      Source file:   platform\drivers\src\rtc\fsl_rtc_lpm_callback.c
+      Source file:   platform\drivers\src\rtc\fsl_rtc_driver.c
+      Source file:   platform\drivers\src\rtc\fsl_rtc_irq.c
+      Include file:  platform\drivers\inc\fsl_rtc_driver.h
 
    * Component: Keil::Device:KSDK Driver:GPIO:1.2.0
-      Source file:   platform\drivers\src\gpio\fsl_gpio_irq.c
-      Source file:   platform\drivers\src\gpio\fsl_gpio_common.c
-      Source file:   platform\drivers\src\gpio\fsl_gpio_driver.c
       Include file:  platform\drivers\inc\fsl_gpio_driver.h
+      Source file:   platform\drivers\src\gpio\fsl_gpio_common.c
+      Source file:   platform\drivers\src\gpio\fsl_gpio_irq.c
       Source file:   platform\drivers\src\gpio\fsl_gpio_lpm_callback.c
+      Source file:   platform\drivers\src\gpio\fsl_gpio_driver.c
 
    * Component: Keil::Device:KSDK Configuration:FRDM-K64F:1.2.0
-      Source file:   examples\frdmk64f\hardware_init.c
       Source file:   examples\frdmk64f\board.c
+      Source file:   examples\frdmk64f\hardware_init.c
       Source file:   examples\frdmk64f\gpio_pins.c
       Source file:   examples\frdmk64f\pin_mux.c
       Include file:  examples\frdmk64f\board.h

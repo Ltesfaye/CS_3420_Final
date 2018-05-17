@@ -31,12 +31,25 @@ def readSerial(port,val):
 
 		#polls the data from our Serial Communication
 		out = ser.readline().decode().strip().split()
-
+		#print (out)
 		if (len(out) == 3 and out[2] == '121212'): #updates the value of lists that will be used to display
-			print(out)
-			temp0 = float(out[0])/100
-			temp1 = float(out[1])/100
+			val.updatelabel(0)
+			temp0 = float(out[0])/10000
+			temp1 = float(out[1])/10000
 			val.append(float(temp0),float(temp1))
+
+		elif (len(out) == 3 and out[2] == '1010'): #updates the value of lists that will be used to display
+			val.updatelabel(1)
+			temp0 = float(out[0])/10000
+			temp1 = float(out[1])/10000
+			val.append(float(temp0),float(temp1))
+
+		elif (len(out) == 3 and out[2] == '1111'): #updates the value of lists that will be used to display
+			val.updatelabel(2)
+			temp0 = float(out[0])/10000
+			temp1 = float(out[1])/10000
+			val.append(float(temp0),float(temp1))
+			
 			
 	
 		elif (len(out) == 1 and out[0] == '100000'):

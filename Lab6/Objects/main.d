@@ -25,7 +25,6 @@
 .\objects\main.o: Integrate.h
 .\objects\main.o: main.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.6.0\Board\Board_Accelerometer.h
-.\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.6.0\Board\Board_Magnetometer.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.3.0\platform\utilities\inc\fsl_debug_console.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.3.0\platform\osa\inc\fsl_os_abstraction.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\Kinetis_SDK_DFP\2.3.0\platform\osa\inc\fsl_os_abstraction_bm.h
